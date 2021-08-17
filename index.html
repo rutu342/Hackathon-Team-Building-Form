@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text=center">Hackathon Team Building Form</h1>
+      <p id="description" class="description text-center">
+        Thank-you for taking time to fill the form hope you will find the perfect match!</p>
+    </header>
+    <form id="survey form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Number</label>
+        <input type="text"name="number"id="number"class="form-control"placeholder="Enter your phone number" required/>
+      </div>
+    <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+   <div class="form-group">
+        <p>
+          What is your favorite feature of Hackathon?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+  <div class="form-group">
+        <p>
+          Please select your skillset?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Front-end</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Back-end</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Artificial Intelligence</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Machine learning</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            class="input-checkbox"
+          />Android development</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="gitter-help-rooms"
+            type="checkbox"
+            class="input-checkbox"
+          />Ui/Ux designer</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Blockchain</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="city-meetups"
+            type="checkbox"
+            class="input-checkbox"
+          />Ar/vr</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="wiki"
+            type="checkbox"
+            class="input-checkbox"
+          />Game development</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="forum"
+            type="checkbox"
+            class="input-checkbox"
+          />Dev-ops</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additional-courses"
+            type="checkbox"
+            class="input-checkbox"
+          />
+          Cyber-Security</label
+        >
+      </div>
+      <div class="form-group">
+        <p>Any other skills?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your skills here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+  
